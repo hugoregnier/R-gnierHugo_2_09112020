@@ -9,7 +9,7 @@ body {
 }
 a:link { 
  text-decoration:none;
- color: black; 
+ color: #000;
 } 
 header{
     display: flex;
@@ -30,14 +30,15 @@ header{
 .headerNav a {
     float: left;
     display: block;
-    color: black;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
     border-top: 3px solid transparent;
 }
-  
+.headerNav > .inscription {
+    color: #0065FC;
+}
 .headerNav a:hover {
     border-top: 3px solid  #0065FC;
 }
@@ -61,8 +62,14 @@ header{
     display: flex;
     align-items: center;
 }
-.fa, .fas {
+.fas {
     color: #0065FC;
+}
+.fa-chart-line {
+    color: #000;
+}
+.grey {
+    color: #F2F2F2;
 }
 .fas.fa-map-marker-alt {
     background-color: #F2F2F2;
@@ -81,14 +88,17 @@ header{
     border-style: solid;
     border-left: none;
     border-right: none;
+    font-weight: bold;
 }
 .inputResearch  {
     background-color: #0065FC;
+    border: #0065FC;
     color: white;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
     height: 40px;
     width: 100px;
+    font-weight: bold;
     transition: 0.5s;
 }
 .inputResearch:hover {
