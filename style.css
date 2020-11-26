@@ -14,10 +14,11 @@ a:link {
 header{
     display: flex;
     justify-content: space-between;
-    margin: 2% 2%;
+    align-items: center;
+    margin: 0% 2%;
 }
 .logo{
-    width: 120px;
+    height: 70px;
     margin-left: 1%;
 }
 .headerNav{
@@ -31,20 +32,20 @@ header{
     float: left;
     display: block;
     text-align: center;
-    padding: 14px 16px;
+    padding: 40px 16px;
     text-decoration: none;
     font-size: 17px;
-    border-top: 3px solid transparent;
+    border-top: 2px solid transparent;
 }
 .headerNav > .inscription {
     color: #0065FC;
 }
 .headerNav a:hover {
-    border-top: 3px solid  #0065FC;
+    border-top: 2px solid  #0065FC;
 }
-  
-.topnav a.active {
-    border-top: 3px solid  #0065FC;
+.headerNav a.active {
+    border-top: 2px solid #0065FC;
+    color: #0065FC;
 }
 .research {
     margin-left: 1%;
@@ -90,7 +91,7 @@ header{
     border-right: none;
     font-weight: bold;
 }
-.inputResearch  {
+.inputResearch {
     background-color: #0065FC;
     border: #0065FC;
     color: white;
@@ -100,6 +101,9 @@ header{
     width: 100px;
     font-weight: bold;
     transition: 0.5s;
+}
+.hide {
+    display: none !important;
 }
 .inputResearch:hover {
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
@@ -308,16 +312,32 @@ header {
 .headerNav {
     justify-content: space-around;
     flex-wrap: wrap-reverse;
-    height: 50px;
+    height: 125px;
 }
 .inscription {
-    margin-left: 240px;
+    margin-left: auto;
 }
 .hosting {
     display: flex;
     flex-direction: column-reverse;
 }
-.researchFilters,.activity {
+.researchFilters {
+    display: flex;
+    flex-wrap: wrap;
+}
+.researchFilters h4 {
+    width: 100%;
+}
+.buttonFilters {
+    margin: 5px 0px;
+}
+.inputResearch {
+    display: none !important;
+}
+.hide {
+    display: inline !important;
+}
+.activity {
     display: flex;
     flex-direction: column;
 }
@@ -331,6 +351,7 @@ header {
 }
 .hostingArticlePopular {
     width: 96%;
+    border-radius: 0;
 }
 .hostingPlacePopular img {
     height: 200px;
