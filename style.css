@@ -6,6 +6,7 @@
 
 body {
     font-family: Raleway;
+    margin: 0;
 }
 a:link { 
     text-decoration:none;
@@ -14,31 +15,22 @@ a:link {
 a:visited {
     color: #000;
 }
-header{
+header {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0% 2%;
+    flex-wrap: wrap;
+    
 }
-.logo{
+.logo {
     height: 70px;
     margin-left: 1%;
+    position: relative;
 }
-.headerNav{
-    display: flex;
-    justify-content: space-between;
-    width: 400px;
-    margin: auto 0;
-    margin-right: 15px;
+.headerNav {
+    
+
 }  
 .headerNav a {
-    float: left;
-    display: block;
-    text-align: center;
-    padding: 40px 16px;
-    text-decoration: none;
-    font-size: 17px;
-    border-top: 2px solid transparent;
+    float: right;
 }
 .headerNav > .inscription {
     color: #0065FC;
@@ -146,12 +138,15 @@ header{
 
 .resultFilters {
     margin-bottom: 35px;
+    display: flex;
+    align-items: center;
 }
 .fas.fa-info {
     border: solid;
     border-color: #F2F2F2;
     border-radius: 50px;
-    padding: 8px;
+    padding: 2px 8px;
+    margin-right: 10px;
     color: #0065FC;
 }
 .hosting{
@@ -288,7 +283,7 @@ h2 > i{
 .footercolumnblock {
     display: flex;
     justify-content: space-between;
-    margin: 4% 28% 2% 3%;
+    margin: 4% 28% 0 3%;
     
 }
 .footercolumn {
@@ -309,16 +304,38 @@ footer{
 }
 
 @media all and (max-width: 1024px) {
+.logo {
+    display: block;
+    position: absolute;
+}
+.headerNav a.active {
+    border-top: none;
+    border-bottom: 2px solid #0065FC;
+    color: #0065FC;
+}
+.activityNav {
+    border-bottom: 2px solid #DEEBFF; 
+}
 header {
-    flex-wrap: wrap;
+    
 }
 .headerNav {
-    justify-content: space-around;
-    flex-wrap: wrap-reverse;
-    height: 125px;
+    display: flex;
+    flex-direction: column-reverse;
 }
 .inscription {
+    margin-top: 30px;
     margin-left: auto;
+    margin-right: 20px;
+}
+.navLinks {
+    margin-top: 20px;
+}
+.navLinks > a {
+    width: 50%;
+}
+.hostingSpan {
+    margin-bottom: 10px;
 }
 .hosting {
     display: flex;
@@ -374,6 +391,9 @@ header {
 }
 .footercolumnblock {
     flex-wrap: wrap;
+}
+.fas.fa-info {
+    margin-bottom: 20px;
 }
 
 } /*comportememnt mobile*/
