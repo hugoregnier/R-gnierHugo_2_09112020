@@ -17,30 +17,45 @@ a:visited {
 }
 header {
     display: flex;
-    flex-wrap: wrap;
-    
 }
 .logo {
-    height: 70px;
-    margin-left: 1%;
+    height: 60px;
     position: relative;
+    margin-left: 50px;
+    margin-top: 30px;
 }
 .headerNav {
-    
-
-}  
+    display: flex;
+    margin-left: auto;
+    margin-right: 70px;
+    align-items: center;
+} 
+.hostingSpan {
+    margin-top: 40px;
+}
+.activityNav {
+    width: 170px;
+    text-align: center;
+}
 .headerNav a {
-    float: right;
+    
+}
+.navLinks {
+    display: flex;
+    margin-right: 20px;
 }
 .headerNav > .inscription {
     color: #0065FC;
 }
-.headerNav a:hover {
+.navLinks a:hover {
     border-top: 2px solid  #0065FC;
 }
 .headerNav a.active {
     border-top: 2px solid #0065FC;
     color: #0065FC;
+    width: 170px;
+    text-align: center;
+    height: 96px;
 }
 .research {
     margin-left: 1%;
@@ -314,14 +329,15 @@ footer{
     color: #0065FC;
 }
 .activityNav {
-    border-bottom: 2px solid #DEEBFF; 
+    border-bottom: 2px solid #F2F2F2; 
 }
 header {
-    
+    display: block;
 }
 .headerNav {
     display: flex;
     flex-direction: column-reverse;
+    margin: 0;
 }
 .inscription {
     margin-top: 30px;
@@ -330,9 +346,11 @@ header {
 }
 .navLinks {
     margin-top: 20px;
+    text-align: center;
 }
 .navLinks > a {
     width: 50%;
+    float: left;
 }
 .hostingSpan {
     margin-bottom: 10px;
