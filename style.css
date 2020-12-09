@@ -21,7 +21,7 @@ header {
 .logo {
     height: 60px;
     position: relative;
-    margin-left: 50px;
+    margin-left: 55px;
     margin-top: 30px;
 }
 .headerNav {
@@ -36,9 +36,6 @@ header {
 .activityNav {
     width: 170px;
     text-align: center;
-}
-.headerNav a {
-    
 }
 .navLinks {
     display: flex;
@@ -58,7 +55,7 @@ header {
     height: 96px;
 }
 .research {
-    margin-left: 1%;
+    margin-left: 10px;
 }
 .main{
     margin: 0 2%;
@@ -323,13 +320,16 @@ footer{
     display: block;
     position: absolute;
     height: 40px;
-    margin-left: 20px;
+    margin-left: 10px;
 }
 .headerNav a.active {
     border-top: none;
     border-bottom: 2px solid #0065FC;
     color: #0065FC;
     height: 75px;
+}
+.researchTitle h2 {
+    margin-bottom: 10px;
 }
 .activityNav {
     border-bottom: 2px solid #F2F2F2; 
@@ -342,13 +342,18 @@ header {
     flex-direction: column-reverse;
     margin: 0;
 }
-.inscription {
+.research {
+    margin: auto 4%;
+}
+.researchForm {
     margin-top: 30px;
+}
+.inscription {
+    margin-top: 45px;
     margin-left: auto;
     margin-right: 20px;
 }
 .navLinks {
-    margin-top: 20px;
     text-align: center;
     width: 100%;
 }
@@ -356,9 +361,10 @@ header {
     width: 50% !important;
     float: left;
 }
-.hostingSpan {
-    
+.main {
+    margin: 0;
 }
+
 .hosting {
     display: flex;
     flex-direction: column-reverse;
